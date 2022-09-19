@@ -232,7 +232,7 @@ case $mainmenu_selection in
 		echo -e "\e[30;48;5;82m   Docker-compose already installed\e[0m"
 	else
 		echo -e "\e[33;1m    Installing docker-compose - please wait\e[0m"
-		sudo apt install -y docker-compose &> /dev/null
+		sudo pacman -Sy --noconfirm docker-compose &> /dev/null
 		echo -e "\e[32;1m    Docker-compose Installed\e[0m"
 		echo -e "     "
 	fi
@@ -528,7 +528,7 @@ EOF
 			echo -e "\e[36;1m    rclone installed and gdrive configured, go to Backup or Restore \e[0m" 
    		    echo -e "\e[32m=====================================================================================\e[0m"
 	else
-		sudo apt install -y rclone
+		sudo pacman -Sy --noconfirm rclone
 			echo -e "\e[32m=====================================================================================\e[0m"
 			echo -e "     Please run \e[32;1mrclone config\e[0m and create remote \e[34;1m(gdrive)\e[0m for backup   "
 			echo -e "     "
