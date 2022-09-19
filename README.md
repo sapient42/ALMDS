@@ -1,6 +1,9 @@
 # LMDS Stack
 
 <b>Linux Media Delivery System Stack based on Docker and Raspberry Pi</b>
+<b>Updated to attempt to work with Arch (pacman) based systems</b>
+
+
 
 ## About
 
@@ -53,7 +56,7 @@ Blog link: http://greenfrognest.com/lmdsondocker.php
 Static IP address is not absolutely necessary just to try the project to find out if you like it or not, but in case if you would like to properly utilize pi-hole in your network - you would have to point your router towards RPi IP for DNS resolution and having it static would be mandatory.</b>
 
 - install git using a command:
-<pre><code>sudo apt-get install git</code></pre>
+<pre><code>sudo pacman -S git</code></pre>
 
 - Clone the repository with:
 <pre><code>git clone https://github.com/GreenFrogSB/LMDS.git ~/LMDS</code></pre>
